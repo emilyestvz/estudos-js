@@ -7,7 +7,7 @@
             <script>
                 //void
                 // return
-                /*
+                
                 var largura = prompt('Digite a largura do terreno em metros: ')
                 var comprimento = prompt('Digite o comprimento do terreno em metros: ')
 
@@ -22,15 +22,18 @@
 
                     return area
                 }
-                */
-
-                function soma(a, b) {
-                    return a + b
-
-                }
-
-                console.log(soma(7, 7))
+                
             </script>
     </head>
-
+    <body>
+        <h1>Calculadora de área</h1>
+        <label for="largura">Largura:</label>
+        <input type="number" id="largura" name="largura">
+        <br>
+        <label for="comprimento">Comprimento:</label>
+        <input type="number" id="comprimento" name="comprimento">
+        <br>
+        <button onclick="calcularArea()">Calcular área</button>
+        <p id="area"></p>
+    </body>
 </html>
